@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Ürünler</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngFor="let product of product ">
+    <ion-img class="ion-no-padding" src="https://www.novsen.com.tr/Uploads/UrunResimleri/haberlesme-modulu-rs-485-jbusmodbus-89-438.jpg" ></ion-img>
+    <ion-card-header class="ion-text-center">
+      <ion-card-subtitle>KOD NO: PİER855282RPİ</ion-card-subtitle>
+      <ion-card-title> {{ product.title } </ion-card-title>
+      <ion-card-subtitle style="margin-top: 4%;">MODBUS SERİ İLETİŞİM</ion-card-subtitle>
+      <ion-card-title style="margin-top: 10%;" > $289.00 </ion-card-title>
+    </ion-card-header>
+    <ion-card-content  class="ion-text-center">
+     <ion-item class="ion-text-center">
+      <ion-button size="medium" >
+        <ion-icon  name="duplicate-outline"></ion-icon>
+      </ion-button>
+
+      <ion-label>1</ion-label>
+
+      <ion-button size="medium">
+        <ion-icon  name="remove-outline"></ion-icon>
+      </ion-button>
+
+     </ion-item>
+      <ion-button expand="block" style="text-align: center;"><ion-icon name="bag-add-outline" style="margin-right: 3%;"></ion-icon>Sepete Ekle</ion-button>
+      <ion-item class="ion-text-center">
+        <ion-label>
+          <p>Kalan Stok Sayısı: 78</p>
+        </ion-label>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+
+  
+</ion-content>
